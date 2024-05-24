@@ -204,6 +204,21 @@ export const Styles = css`
     margin: 0;
   }
 
+
+  @media screen and (max-width: 960px) {
+
+    .main-area {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .main-area #history, .main-area #playing {
+      width: 90%;
+      margin: 20px;
+    }
+
+  }
+
   .loader {
     width: 48px;
     height: 48px;
