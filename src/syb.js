@@ -51,7 +51,7 @@ export class NowPlaying extends LitElement {
 
   renderScrobbleCard () {
     return this.scrobbles
-      .slice()
+      .slice(0,-1)
       .reverse()
       .map(
         scrobble => html`
@@ -78,7 +78,7 @@ export class NowPlaying extends LitElement {
           <h2>Now Playing</h2>
         </header>
         <div class="song__info">
-          <img class="played__cover" alt="" src="${lastScrobble.image_url}">
+          <div class="played__cover" style="background-image: url(${lastScrobble.image_url});"></div>
           <h2>${lastScrobble.song_name}</h2>
           <h3>${lastScrobble.artists.map(artist => artist.name).join(', ')}</h3>
         <div>

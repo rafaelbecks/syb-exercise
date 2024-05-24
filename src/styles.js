@@ -95,9 +95,15 @@ export const Styles = css`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    img {
+    .played__cover {
       border-radius: 16px;
       width: 248px;
+      height: 247px;
+      border: none;
+      background-size: contain;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
     }
 
     header {
