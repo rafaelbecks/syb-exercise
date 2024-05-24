@@ -1,10 +1,57 @@
-import { css, html } from 'lit'
+import { css } from 'lit'
 
 export const Styles = css`
   .main-area {
     background-color: #e5e5f7;
     background-color: #e5e5f7;
-    background-image:  linear-gradient(30deg, #7BA29E 12%, transparent 12.5%, transparent 87%, #7BA29E 87.5%, #7BA29E), linear-gradient(150deg, #7BA29E 12%, transparent 12.5%, transparent 87%, #7BA29E 87.5%, #7BA29E), linear-gradient(30deg, #7BA29E 12%, transparent 12.5%, transparent 87%, #7BA29E 87.5%, #7BA29E), linear-gradient(150deg, #7BA29E 12%, transparent 12.5%, transparent 87%, #7BA29E 87.5%, #7BA29E), linear-gradient(60deg, #7BA29E77 25%, transparent 25.5%, transparent 75%, #7BA29E77 75%, #7BA29E77), linear-gradient(60deg, #7BA29E77 25%, transparent 25.5%, transparent 75%, #7BA29E77 75%, #7BA29E77);
+    background-image: linear-gradient(
+        30deg,
+        #7ba29e 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #7ba29e 87.5%,
+        #7ba29e
+      ),
+      linear-gradient(
+        150deg,
+        #7ba29e 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #7ba29e 87.5%,
+        #7ba29e
+      ),
+      linear-gradient(
+        30deg,
+        #7ba29e 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #7ba29e 87.5%,
+        #7ba29e
+      ),
+      linear-gradient(
+        150deg,
+        #7ba29e 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #7ba29e 87.5%,
+        #7ba29e
+      ),
+      linear-gradient(
+        60deg,
+        #7ba29e77 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #7ba29e77 75%,
+        #7ba29e77
+      ),
+      linear-gradient(
+        60deg,
+        #7ba29e77 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #7ba29e77 75%,
+        #7ba29e77
+      );
     background-size: 160px 200px;
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     width: 100vw;
@@ -22,7 +69,7 @@ export const Styles = css`
   }
 
   .main-area section {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -44,7 +91,6 @@ export const Styles = css`
   }
 
   #playing {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +120,7 @@ export const Styles = css`
 
       h3 {
         font-size: 16px;
-        color: #99938F;
+        color: #99938f;
         margin: 0;
         font-weight: 300;
       }
@@ -95,7 +141,7 @@ export const Styles = css`
   header button {
     width: 45px;
     height: 45px;
-    background-color: #F33440;
+    background-color: #f33440;
     border-radius: 100px;
     border: 0;
     cursor: pointer;
@@ -128,7 +174,7 @@ export const Styles = css`
     margin: 5px 20px;
   }
 
-  .played__row-template img  {
+  .played__row-template img {
     width: 84px;
     border-radius: 16px;
   }
@@ -147,35 +193,34 @@ export const Styles = css`
   .played__title__artists span {
     font-size: 12px;
     font-weight: 300;
-    color: #99938F;
+    color: #99938f;
   }
 
   .played__title__artists h3 {
     font-size: 14px;
     font-family: Inter;
     font-weight: 300;
-    color: #99938F;
+    color: #99938f;
     margin: 0;
   }
 
   .loader {
     width: 48px;
     height: 48px;
-    border: 5px solid #FFF;
-    border-bottom-color: #F33440;
+    border: 5px solid #fff;
+    border-bottom-color: #f33440;
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    }
+  }
 
-    @keyframes rotation {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
     }
-
-  `
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`
